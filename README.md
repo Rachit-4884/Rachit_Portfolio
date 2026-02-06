@@ -1,36 +1,128 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Rachit Portfolio - Premium Portfolio Website
+
+A premium, executive-grade portfolio website for Rachit H Maniar, Technical Product Owner & Program Manager.
+
+## Features
+
+- ✨ **Executive-Modern Design** - Clean, professional, enterprise-grade aesthetics
+- 🌓 **Dark Mode** - Persistent theme toggle with localStorage
+- 📱 **Mobile-First Responsive** - Optimized for all devices
+- ♿ **Accessible** - WCAG compliant with keyboard navigation and ARIA labels
+- ⚡ **Performance Optimized** - Fast loading with minimal JavaScript
+- 🎨 **Premium Animations** - Subtle micro-interactions and smooth transitions
+- 📊 **Data-Driven** - Centralized content management
+
+## Tech Stack
+
+- **Framework**: Next.js 14+ with App Router
+- **Styling**: Tailwind CSS
+- **Language**: TypeScript
+- **Fonts**: Inter (Google Fonts)
+- **Theme**: next-themes for dark mode
+- **Animations**: Framer Motion
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18+ and npm
+
+### Installation
+
+1. Clone the repository
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+### Development
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Build for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+rachit-portfolio/
+├── app/
+│   ├── layout.tsx          # Root layout with SEO metadata
+│   ├── page.tsx             # Main page assembling all sections
+│   └── globals.css          # Global styles and Tailwind directives
+├── components/
+│   ├── Navbar.tsx           # Sticky navigation with dark mode
+│   ├── Hero.tsx             # Hero section with animated headlines
+│   ├── About.tsx            # About section with stats
+│   ├── Experience.tsx       # Timeline-based experience
+│   ├── Projects.tsx         # Flagship initiatives showcase
+│   ├── Skills.tsx           # Enterprise-grouped skills
+│   ├── Certifications.tsx   # Badge-style certifications
+│   ├── Testimonials.tsx     # Carousel testimonials
+│   ├── Contact.tsx          # Contact form with validation
+│   ├── Footer.tsx           # Footer with social links
+│   └── ThemeProvider.tsx    # Dark mode provider
+├── lib/
+│   └── data.ts              # Centralized content data
+└── tailwind.config.ts       # Tailwind theme configuration
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Customization
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Update Content
 
-## Deploy on Vercel
+Edit `lib/data.ts` to update:
+- Personal information
+- Experience history
+- Projects and initiatives
+- Skills and certifications
+- Testimonials
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Update Colors
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Edit `tailwind.config.ts` to customize the color scheme:
+- Navy: `#0B1020`
+- Gold: `#D4AF37`
+
+### Update SEO
+
+Edit `app/layout.tsx` to update metadata, OpenGraph tags, and Twitter cards.
+
+## Performance
+
+- Optimized images with Next.js Image component
+- Minimal JavaScript bundle
+- Lazy loading for off-screen content
+- Smooth scroll behavior
+- CSS animations over JavaScript
+
+## Accessibility
+
+- Semantic HTML5 elements
+- ARIA labels and roles
+- Keyboard navigation support
+- Focus states on interactive elements
+- Proper heading hierarchy
+- Color contrast compliance
+
+## Browser Support
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+
+## License
+
+© 2026 Rachit H Maniar. All rights reserved.
