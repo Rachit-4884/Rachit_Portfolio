@@ -2,8 +2,8 @@ export const personalInfo = {
     name: "Rachit H Maniar",
     title: "Technical Product Owner & Program Manager",
     location: "Dallas, TX",
-    email: "rachit.maniar@example.com",
-    linkedin: "https://www.linkedin.com/in/rachitmaniar",
+    email: "rachit4884@gmail.com",
+    linkedin: "https://www.linkedin.com/in/rachit-maniar-6369a717/",
     tagline: "Driving Enterprise Products from Strategy to Scalable Impact",
     bio: "Technical Product Owner & Program Manager with 5.5+ years leading analytics, AI, and connected vehicle platforms across Fortune 200 organizations. Proven track record of delivering enterprise-scale products with precision and strategic clarity, transforming complex technical requirements into measurable business value.",
 };
